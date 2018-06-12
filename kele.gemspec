@@ -1,7 +1,7 @@
 
-lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "kele/version"
+#lib = File.expand_path("../lib", __FILE__)
+#$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+#require "kele/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "kele"
@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'A client for the Bloc API'
   spec.authors       = ["Thal Syhabout"]
   spec.email         = ["tsyhabout@gmail.com"]
-  spec.files         = ['lib/kele.rb']
+  spec.files         = ['lib/kele.rb','lib/roadmap.rb']
   spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
   spec.description   = %q{TODO: Write a longer description or delete this line.}
   spec.homepage      = 'http://rubygems.org/gems/kele'
