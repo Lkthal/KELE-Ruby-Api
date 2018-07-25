@@ -21,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-###Retrieving Current User
+### Retrieving Current User
 
 replace the email with the user you are searching for.
 ```
@@ -44,7 +44,7 @@ $ irb
 >> kele_client.get_mentor_availability(mentor_id)
 ```
 
-###Retrieving Roadmap
+### Retrieving Roadmap
 
 ```
 $ irb
@@ -56,7 +56,7 @@ $ irb
 
 ```
 
-###Retrieving Messages
+### Retrieving Messages
 
 ```
 $ irb
@@ -68,7 +68,7 @@ $ irb
 
 ```
 
-###Retrieving Remaining Checkpoint
+### Retrieving Remaining Checkpoint
 
 ```
 $ irb
