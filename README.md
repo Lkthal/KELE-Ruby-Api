@@ -1,8 +1,7 @@
 # Kele
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/kele`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to Kele gem! Kele is a gem that allows user to be authorized to the Bloc application via JSON Web Token. Put your Ruby code in the file `lib/kele`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,7 +21,62 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+###Retrieving Current User
+
+replace the email with the user you are searching for.
+```
+$ irb
+>> require './lib/kele'
+=> true
+>> kele_client = Kele.new("jane@gmail.com", "abc123")
+>> kele_client.get_me
+
+```
+
+### Checking if Mentor is available
+
+```
+$ irb
+>> require './lib/kele'
+=> true
+>> kele_client = Kele.new("jane@gmail.com", "abc123")
+>> mentor_id = 99
+>> kele_client.get_mentor_availability(mentor_id)
+```
+
+###Retrieving Roadmap
+
+```
+$ irb
+>> require './lib/kele'
+=> true
+>> kele_client = Kele.new("jane@gmail.com", "abc123")
+>> chain_id = 99
+>> kele_client.get_roadmap(chain_id)
+
+```
+
+###Retrieving Messages
+
+```
+$ irb
+>> require './lib/kele'
+=> true
+>> kele_client = Kele.new("Hannah.McExample@gmail.com", "abc123")
+>> kele_client.get_messages(1) # returns the first page of message threads
+>> kele_client.get_messages # returns all message threads
+
+```
+
+###Retrieving Remaining Checkpoint
+
+```
+$ irb
+>> require './lib/kele'
+=> true
+>> kele_client = Kele.new("Hannah.McExample@gmail.com", "abc123")
+>> kele_client.get_remaining_checkpoints(chain_id)
+```
 
 ## Development
 
@@ -32,7 +86,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/kele. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[LKThal]/kele. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
